@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'SYActivityIndicatorView'
-s.version          = '0.0.1'
+s.version          = '0.0.2'
 s.summary          = 'Add custom activity indicator to your iOS app'
 
 s.description      = <<-DESC
@@ -13,6 +13,6 @@ s.author           = { 'Sergey Yuryev' => 'snyuryev@gmail.com' }
 s.source           = { :git => 'https://github.com/snyuryev/SYActivityIndicatorView.git', :tag => s.version.to_s }
 
 s.ios.deployment_target = '11.3'
-s.source_files = 'SYActivityIndicatorView/SYActivityIndicatorView.swift'
+s.source_files = 'SYActivityIndicatorView/SYActivityIndicatorView.swift', 'SYActivityIndicatorView/loading.png', 'SYActivityIndicatorView/loading@2x.png', 'SYActivityIndicatorView/loading@3x.png'
 
 end
