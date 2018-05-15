@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'SYActivityIndicatorView'
-s.version          = '0.0.2'
+s.version          = '0.0.4'
 s.summary          = 'Add custom activity indicator to your iOS app'
 
 s.description      = <<-DESC
