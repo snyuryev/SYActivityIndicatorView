@@ -2,15 +2,19 @@
 SYActivityIndicatorView
 
 
-1. Define activity indicator variable.
-1.1 Use nil or own UIImage
++ Define activity indicator variable.
++ Use nil or own UIImage
 
+```swift
 lazy private var activityIndicator : SYActivityIndicatorView = {
-   return SYActivityIndicatorView(image: nil)
-}()
+  return SYActivityIndicatorView(image: nil)
+  }()
+```
 
-2. Add activity indicator to your view
++ Add activity indicator to your view
 
+```swift
 self.view.addSubview(self.activityIndicator)
 self.activityIndicator.center = self.view.center
 self.activityIndicator.startAnimating()
+```
