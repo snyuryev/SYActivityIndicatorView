@@ -9,7 +9,7 @@
 import UIKit
 import QuartzCore
 
-class SYActivityIndicatorView: UIView {
+public class SYActivityIndicatorView: UIView {
     
     // MARK - Variables
     
@@ -22,13 +22,26 @@ class SYActivityIndicatorView: UIView {
     
     // MARK - Init
     
-    init(image : UIImage) {
-        let frame : CGRect = CGRect(x: 0.0, y: 0.0, width: image.size.width, height: image.size.height)
+    public init(image : UIImage?) {
         
+        var frame : CGRect
+        var loadingImage: UIImage!
+        
+        if let image = image {
+            loadingImage = image
+            frame = CGRect(x: 0.0, y: 0.0, width: image.size.width, height: image.size.height)
+        }
+        else {
+            let image : UIImage = UIImage(named: "loading.png")!
+            loadingImage = image
+            frame = CGRect(x: 0.0, y: 0.0, width: image.size.width, height: image.size.height)
+        }
+        
+
         super.init(frame: frame)
         
         animationLayer.frame = frame
-        animationLayer.contents = image.cgImage
+        animationLayer.contents = loadingImage.cgImage
         animationLayer.masksToBounds = true
         
         self.layer.addSublayer(animationLayer)
@@ -38,13 +51,13 @@ class SYActivityIndicatorView: UIView {
         self.isHidden = true
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required public init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     // MARK - Func
     
-    func addRotation(forLayer layer : CALayer) {
+    public func addRotation(forLayer layer : CALayer) {
         let rotation : CABasicAnimation = CABasicAnimation(keyPath:"transform.rotation.z")
         
         rotation.duration = 1.0
@@ -57,7 +70,7 @@ class SYActivityIndicatorView: UIView {
         layer.add(rotation, forKey: "rotate")
     }
     
-    func pause(layer : CALayer) {
+    public func pause(layer : CALayer) {
         let pausedTime = layer.convertTime(CACurrentMediaTime(), from: nil)
         
         layer.speed = 0.0
@@ -66,7 +79,7 @@ class SYActivityIndicatorView: UIView {
         isAnimating = false
     }
     
-    func resume(layer : CALayer) {
+    public func resume(layer : CALayer) {
         let pausedTime : CFTimeInterval = layer.timeOffset
         
         layer.speed = 1.0
@@ -79,7 +92,7 @@ class SYActivityIndicatorView: UIView {
         isAnimating = true
     }
     
-    func startAnimating () {
+    public func startAnimating () {
         
         if isAnimating {
             return
@@ -91,7 +104,7 @@ class SYActivityIndicatorView: UIView {
         resume(layer: animationLayer)
     }
     
-    func stopAnimating () {
+    public func stopAnimating () {
         if hidesWhenStopped {
             self.isHidden = true
         }
