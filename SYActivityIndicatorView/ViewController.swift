@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     lazy private var activityIndicator : SYActivityIndicatorView = {
-        let image : UIImage = UIImage(named: "loading")!
+        let image : UIImage = UIImage(named: "loading.png")!
         return SYActivityIndicatorView(image: image)
     }()
 

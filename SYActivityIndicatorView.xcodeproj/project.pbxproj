@@ -13,6 +13,9 @@
 		058634AC20AAD98B0047A1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058634AB20AAD98B0047A1E0 /* Assets.xcassets */; };
 		058634AF20AAD98B0047A1E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 058634AD20AAD98B0047A1E0 /* LaunchScreen.storyboard */; };
 		058634B720AADBEC0047A1E0 /* SYActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058634B620AADBEC0047A1E0 /* SYActivityIndicatorView.swift */; };
+		058634C120AADE1D0047A1E0 /* loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 058634BE20AADE1D0047A1E0 /* loading@2x.png */; };
+		058634C220AADE1D0047A1E0 /* loading@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 058634BF20AADE1D0047A1E0 /* loading@3x.png */; };
+		058634C320AADE1D0047A1E0 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 058634C020AADE1D0047A1E0 /* loading.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		058634AE20AAD98B0047A1E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		058634B020AAD98B0047A1E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		058634B620AADBEC0047A1E0 /* SYActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYActivityIndicatorView.swift; sourceTree = "<group>"; };
+		058634BE20AADE1D0047A1E0 /* loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading@2x.png"; sourceTree = "<group>"; };
+		058634BF20AADE1D0047A1E0 /* loading@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading@3x.png"; sourceTree = "<group>"; };
+		058634C020AADE1D0047A1E0 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				058634AD20AAD98B0047A1E0 /* LaunchScreen.storyboard */,
 				058634B020AAD98B0047A1E0 /* Info.plist */,
 				058634B620AADBEC0047A1E0 /* SYActivityIndicatorView.swift */,
+				058634C020AADE1D0047A1E0 /* loading.png */,
+				058634BE20AADE1D0047A1E0 /* loading@2x.png */,
+				058634BF20AADE1D0047A1E0 /* loading@3x.png */,
 			);
 			path = SYActivityIndicatorView;
 			sourceTree = "<group>";
@@ -125,8 +134,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				058634C320AADE1D0047A1E0 /* loading.png in Resources */,
 				058634AF20AAD98B0047A1E0 /* LaunchScreen.storyboard in Resources */,
+				058634C120AADE1D0047A1E0 /* loading@2x.png in Resources */,
 				058634AC20AAD98B0047A1E0 /* Assets.xcassets in Resources */,
+				058634C220AADE1D0047A1E0 /* loading@3x.png in Resources */,
 				058634AA20AAD98B0047A1E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
